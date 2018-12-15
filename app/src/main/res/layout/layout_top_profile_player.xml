@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    app:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67sp"
+        app:cardCornerRadius="0sp"
+        app:cardUseCompatPadding="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30sp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="20sp">
+
+                <TextView
+                    android:id="@+id/txt_psn_profile_player"
+                    android:layout_width="368sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txt_name_profile_player"
+                    android:layout_width="368sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:textColor="#727272"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:paddingLeft="35sp"
+                android:paddingRight="35sp"
+                android:paddingTop="0sp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.35">
+
+                    <ImageView
+                        android:id="@+id/img_add_player"
+                        android:layout_width="36sp"
+                        android:layout_height="36sp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/ic_add_player" />
+
+                    <TextView
+                        android:id="@+id/txt_add_player"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/img_add_player"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="@string/txt_title_add_player_profile_player" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_chat"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.35">
+
+                    <ImageView
+                        android:id="@+id/img_chat"
+                        android:layout_width="36sp"
+                        android:layout_height="36sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/ic_chat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_chat"
+                        android:layout_marginTop="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12sp"
+                        android:text="@string/txt_title_chat_profile_player" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_invite_to_play"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.35">
+
+                    <ImageView
+                        android:id="@+id/img_invite_to_play"
+                        android:layout_width="32sp"
+                        android:layout_height="22sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_console" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/img_invite_to_play"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="@string/txt_title_invite_match_profile_player" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile_player"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="8dp"
+        android:src="@color/colorPrimary"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="0dp" />-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_profile_player"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:elevation="8sp"
+        android:src="@color/colorGray"
+        app:civ_border="false"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"/>
+
+</RelativeLayout>

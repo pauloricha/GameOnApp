@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">GameOnApp</string>
+    <string name="title_email_act_login">EMAIL</string>
+    <string name="title_password_act_login">SENHA</string>
+    <string name="btn_forgot_password_act_login">Esqueci minha senha</string>
+    <string name="txt_btn_login_act_login">Login</string>
+    <string name="txt_register_act_login">VOCÊ NÃO POSSUI UMA CONTA?</string>
+    <string name="txt_register_act_login_2">CADASTRE-SE</string>
+    <string name="txt_settings">Configurações</string>
+
+    <string name="txt_dashboard">Dashboard</string>
+    <string name="txt_profile_player">Player</string>
+    <string name="txt_profile">Perfil</string>
+    <string name="txt_tournaments">Torneios</string>
+    <string name="txt_find_players">Encontrar Jogadores</string>
+    <string name="txt_logout">Sair</string>
+    <string name="txt_title_forgot_password">Recuperar minha Senha</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="txt_email">EMAIL</string>
+    <string name="txt_recover_forgot_pass">Recuperar</string>
+    <string name="txt_question_register_forgot_pass">VOCÊ NÃO POSSUI UMA CONTA?</string>
+    <string name="txt_register_forgot_pass">CADASTRE-SE</string>
+    <string name="txt_title_register">Cadastro</string>
+    <string name="txt_title_name_register">NOME COMPLETO</string>
+    <string name="txt_title_email_register">EMAIL</string>
+    <string name="txt_title_countrys_register">PAÍS</string>
+    <string name="txt_title_states_register">ESTADO</string>
+    <string name="txt_title_platform_register">PLATAFORMA</string>
+    <string name="txt_title_game_register">JOGO</string>
+    <string name="txt_title_id_profile_register">ID PERFIL</string>
+    <string name="txt_title_psn_register">PSN</string>
+    <string name="txt_title_live_register">LIVE</string>
+    <string name="txt_title_steam_register">STEAM</string>
+    <string name="txt_title_password_register">SENHA</string>
+    <string name="btn_register">Cadastrar</string>
+    <string name="txt_title_add_player_profile_player">Adicionar jogador</string>
+    <string name="txt_title_chat_profile_player">Chat</string>
+    <string name="txt_title_invite_match_profile_player">Convidar para uma partida</string>
+    <string name="txt_title_matches_statics_profile_player">PARTIDAS</string>
+    <string name="txt_title_wins_statics_profile_player">Vitórias</string>
+    <string name="txt_title_draws_statics_profile_player">Empates</string>
+    <string name="txt_title_loses_statics_profile_player">Derrotas</string>
+</resources>

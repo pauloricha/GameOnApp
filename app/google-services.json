@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "719988743474",
+    "firebase_url": "https://gameonapp12.firebaseio.com",
+    "project_id": "gameonapp12",
+    "storage_bucket": "gameonapp12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719988743474:android:7de5e021e1f9fdd0",
+        "android_client_info": {
+          "package_name": "com.gameondigital.gameonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719988743474-po5qm4ng6i4am70soafllrar04m7braj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gameondigital.gameonapp",
+            "certificate_hash": "e01dcc5deb8c95e3fea4cfe1e3c55b19608cdd94"
+          }
+        },
+        {
+          "client_id": "719988743474-1rrl3t928ss786eld3qo2gbire9ip9pv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd0BNS-K4xoCnYirI64UyBebY90BwQ9Tc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719988743474-1rrl3t928ss786eld3qo2gbire9ip9pv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

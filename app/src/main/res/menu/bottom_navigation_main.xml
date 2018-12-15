@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_groups"
+        android:enabled="true"
+        android:icon="@mipmap/ic_groups"
+        android:title="Grupos"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_playoffs"
+        android:enabled="true"
+        android:icon="@drawable/ic_playoffs"
+        android:title="Mata-mata"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_statistics"
+        android:enabled="true"
+        android:icon="@drawable/ic_statistics"
+        android:title="Estatísticas"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_info"
+        android:enabled="true"
+        android:icon="@mipmap/ic_format"
+        android:title="Info"
+        app:showAsAction="ifRoom" />
+</menu>

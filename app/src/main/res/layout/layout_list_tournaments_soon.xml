@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    app:ignore="NamespaceTypo">
+
+    <View
+        android:id="@+id/view_list_tournaments_soon"
+        android:layout_width="50dp"
+        android:layout_height="2.5sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="7sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/txt_title_tournaments_soon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="7sp"
+        android:layout_below="@+id/view_list_tournaments_soon"
+        android:textStyle="bold"
+        android:text="Torneio Semanal"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title_tournaments_soon"
+        app:cardUseCompatPadding="false"
+        android:elevation="4sp"
+        app:cardCornerRadius="20sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="5sp"
+        android:id="@+id/cardView2">
+
+        <LinearLayout
+            android:id="@+id/ll_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_top_list_tournaments_soon"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_list_tournaments_soon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:transitionName="img_shared" />
+
+                <TextView
+                    android:id="@+id/txt_name_list_tournaments_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txt_type_list_tournaments_soon"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="1º Torneio Times Livres - PS4"
+                    android:paddingBottom="10sp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:transitionName="txt_name_shared"/>
+
+                <!--<TextView
+                    android:id="@+id/txt_type_list_tournaments_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp"
+                    android:paddingBottom="10sp"
+                    android:text=""
+                    android:transitionName="txt_type_shared"/>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_info_list_tournaments_soon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_date_list_tournaments_soon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="5sp"
+                        android:textSize="12sp"
+                        android:text="Início em "/>
+
+                    <TextView
+                        android:id="@+id/txt_date_list_tournaments_soon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="3sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="20sp"
+                        android:text=""/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_info_list_tournaments_soon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_below="@+id/ll_date_list_tournaments_soon">
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.35">
+
+                        <ImageView
+                            android:id="@+id/img_awards_list_tournaments_soon"
+                            android:layout_width="32dp"
+                            android:layout_height="31sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="2sp"
+                            android:background="@drawable/ic_award" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_awards_list_tournaments_soon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="4sp">
+
+                            <TextView
+                                android:id="@+id/txt_rs_awards_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="R$"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic"/>
+
+                            <TextView
+                                android:id="@+id/txt_awards_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/txt_rs_awards_list_tournaments_soon"
+                                android:layout_marginLeft="3sp"
+                                android:layout_marginStart="3sp"
+                                android:layout_toEndOf="@+id/txt_rs_awards_list_tournaments_soon"
+                                android:layout_toRightOf="@+id/txt_rs_awards_list_tournaments_soon"
+                                android:text="100,00"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="8sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="10sp"
+                        android:background="@android:color/darker_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.35">
+
+                        <ImageView
+                            android:id="@+id/img_price_list_tournaments_soon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@mipmap/ic_ticket" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_price_list_tournaments_soon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="2sp">
+
+                            <TextView
+                                android:id="@+id/txt_rs_price_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="R$"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/txt_price_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/txt_rs_price_list_tournaments_soon"
+                                android:layout_marginLeft="3sp"
+                                android:layout_marginStart="3sp"
+                                android:layout_toEndOf="@+id/txt_rs_price_list_tournaments_soon"
+                                android:layout_toRightOf="@+id/txt_rs_price_list_tournaments_soon"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="8sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="10sp"
+                        android:background="@android:color/darker_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.35">
+
+                        <ImageView
+                            android:id="@+id/img_number_players_list_tournaments_soon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="2sp"
+                            android:background="@drawable/ic_players" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_number_players_list_tournaments_soon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3sp">
+
+                            <TextView
+                                android:id="@+id/txt_number_players_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_space_number_players_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/txt_number_players_list_tournaments_soon"
+                                android:layout_marginLeft="2sp"
+                                android:layout_marginStart="3sp"
+                                android:layout_toEndOf="@+id/txt_number_players_list_tournaments_soon"
+                                android:layout_toRightOf="@+id/txt_number_players_list_tournaments_soon"
+                                android:text="/"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txt_total_number_players_list_tournaments_soon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/txt_space_number_players_list_tournaments_soon"
+                                android:layout_marginLeft="2sp"
+                                android:layout_marginStart="3sp"
+                                android:layout_toEndOf="@+id/txt_space_number_players_list_tournaments_soon"
+                                android:layout_toRightOf="@+id/txt_space_number_players_list_tournaments_soon"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryLight"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="2sp"
+                android:textSize="16sp"
+                android:text="Participar"
+                android:textColor="@color/colorAccent"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="205dp"
+                android:src="@color/colorPrimaryDark"
+                />-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view_list_tournaments_soon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/view_list_tournaments_soon"
+        android:layout_marginBottom="151dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_register"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|center"
+        android:id="@+id/floatingActionButton" />-->
+
+</RelativeLayout>

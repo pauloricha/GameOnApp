@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@mipmap/ic_menu_dashboard"
+            android:title="@string/txt_dashboard" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/txt_profile" />
+
+        <item
+            android:id="@+id/nav_tournaments"
+            android:icon="@drawable/ic_menu_tournaments"
+            android:title="@string/txt_tournaments" />
+
+        <item
+            android:id="@+id/nav_players"
+            android:icon="@drawable/ic_menu_find_players"
+            android:title="@string/txt_find_players"
+            />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/txt_logout" />
+    </group>
+
+</menu>
+

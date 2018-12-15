@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    app:ignore="NamespaceTypo">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp">
+
+            <TextView
+                android:id="@+id/txt_title_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do Grupo"
+                android:textAllCaps="true"
+                android:paddingTop="20sp"
+                android:paddingBottom="6sp"
+                android:gravity="center"
+                android:textColor="#1a3954"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/txt_title_group"
+                android:background="@color/colorGrayLight3"/>
+
+            <TableRow
+                android:id="@+id/table_1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/line_1"
+                android:background="#b2bdc6"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:text="#"
+                    android:layout_weight="1"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="PSN"
+                    android:layout_weight="0.65"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="P"
+                    android:layout_weight="1"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="J"
+                    android:layout_weight="1"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="V"
+                    android:layout_weight="1"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="SG"
+                    android:layout_weight="1"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/table_1"
+                android:background="@color/colorGrayLight3"/>
+
+            <!-- Linha 2 com 2 colunas -->
+            <TableRow
+                android:id="@+id/table_2"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/line_2"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:paddingLeft="0sp"
+                android:paddingRight="0sp"
+                android:background="@color/colorGrayLight"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:text="1º"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="3sp"
+                    android:paddingRight="3sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_id_1"
+                    android:text="id_1"
+                    android:layout_weight="0.65"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="9sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:id="@+id/txt_points_1"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_matchs_1"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txt_winners_1"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_goal_difference_1"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </TableRow>
+            <!-- Linha 2 com 3 colunas -->
+            <TableRow
+                android:id="@+id/table_3"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/table_2"
+                android:background="@color/colorGrayLight"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:text="2º"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="3sp"
+                    android:paddingRight="3sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_id_2"
+                    android:text="id_2"
+                    android:layout_weight="0.65"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="9sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:id="@+id/txt_points_2"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_matchs_2"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txt_winners_2"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_goal_difference_2"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_4"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/table_3"
+                android:background="@color/colorGrayLight"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:text="3º"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="3sp"
+                    android:paddingRight="3sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_id_3"
+                    android:text="id_3"
+                    android:layout_weight="0.65"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="9sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:id="@+id/txt_points_3"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_matchs_3"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txt_winners_3"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_goal_difference_3"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_5"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/table_4"
+                android:background="@color/colorGrayLight"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:text="4º"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="3sp"
+                    android:paddingRight="3sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_id_4"
+                    android:text="id_4"
+                    android:layout_weight="0.65"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingLeft="9sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:id="@+id/txt_points_4"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_matchs_4"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txt_winners_4"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:background="@color/colorGray"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_goal_difference_4"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:paddingTop="9sp"
+                    android:paddingBottom="9sp"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/table_5"
+                android:background="@color/colorGrayLight"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_jogos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35sp"
+            android:layout_marginLeft="25sp"
+            android:layout_below="@+id/table"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="JOGOS"/>
+
+        <View
+            android:layout_width="30sp"
+            android:layout_height="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginLeft="25sp"
+            android:layout_below="@+id/txt_jogos"
+            android:background="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_rounds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

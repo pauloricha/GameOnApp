@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_list_groups_tournament"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Geral"/>
+
+        <LinearLayout
+            android:id="@+id/ll_num_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="0sp" >
+
+            <RelativeLayout
+                android:id="@+id/rel_matches"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30">
+
+                <TextView
+                    android:id="@+id/txt_num_matches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10sp"
+                    android:layout_below="@+id/txt_num_matches"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:text="partidas" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_goals"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30">
+
+                <TextView
+                    android:id="@+id/txt_num_goals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txt_num_goals"
+                    android:textSize="14sp"
+                    android:text="gols" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_goals_matches"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30">
+
+                <TextView
+                    android:id="@+id/txt_num_goals_matches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txt_num_goals_matches"
+                    android:textSize="14sp"
+                    android:text="gols/partida" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_best_offensive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Melhor Ataque"/>
+
+        <LinearLayout
+            android:id="@+id/ll_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginTop="0sp"
+            android:paddingRight="30sp"
+            android:paddingLeft="30sp"
+            android:layout_marginBottom="0sp" >
+
+            <!--<include
+                layout="@layout/layout_gunners_players"
+                android:layout_marginTop="15sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />-->
+
+            <ListView
+                android:id="@+id/lv_gunners_players"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:focusable="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
