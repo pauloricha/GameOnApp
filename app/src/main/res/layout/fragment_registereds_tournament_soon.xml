@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="15sp"
             android:paddingBottom="12sp"
-            android:background="@color/colorGrayLight2">
+            android:background="@color/colorGreyLight2">
 
             <TextView
                 android:id="@+id/id_ref"

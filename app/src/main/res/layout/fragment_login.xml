@@ -45,7 +45,7 @@
                 android:id="@+id/txt_title_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/colorGrey"
                 android:textStyle="bold"
                 android:textSize="11sp"
                 android:text="@string/title_email_act_login" />
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edt_email_login"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/colorGrey"
                 android:textStyle="bold"
                 android:textSize="11sp"
                 android:text="@string/title_password_act_login"/>

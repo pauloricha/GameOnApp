@@ -1,38 +1,31 @@
 package com.gameondigital.gameonapp.ProfilePlayer;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewTreeObserver;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
-import com.gameondigital.gameonapp.Login.LoginActivity;
 import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.ProfilePlayer.HistoryProfilePlayer.HistoryProfilePlayerFragment;
 import com.gameondigital.gameonapp.ProfilePlayer.StaticsProfilePlayer.StaticsProfilePlayerFragment;
 import com.gameondigital.gameonapp.R;
-import com.gameondigital.gameonapp.Util.ValidationFields;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class ProfilePlayerActivity extends AppCompatActivity implements ProfilePlayerContract.View{
 

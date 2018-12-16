@@ -84,7 +84,7 @@
                     android:id="@+id/match_1"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:gravity="center_horizontal">
 
                     <TextView
@@ -107,13 +107,13 @@
                         android:textSize="15sp"
                         android:paddingTop="7sp"
                         android:paddingBottom="7sp"
-                        android:background="@color/colorGrayLight"
+                        android:background="@color/colorGreyLight"
                         android:gravity="center"/>
 
                     <View
                         android:layout_width="2sp"
                         android:layout_height="match_parent"
-                        android:background="@color/colorGray"/>
+                        android:background="@color/colorGrey"/>
 
                     <TextView
                         android:id="@+id/score_outside_match_1"
@@ -124,7 +124,7 @@
                         android:textSize="15sp"
                         android:paddingTop="7sp"
                         android:paddingBottom="7sp"
-                        android:background="@color/colorGrayLight"
+                        android:background="@color/colorGreyLight"
                         android:gravity="center"/>
 
                     <TextView
@@ -147,7 +147,7 @@
                     android:layout_below="@id/match_1"
                     android:layout_marginTop="5sp"
                     android:layout_marginBottom="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:gravity="center_horizontal">
 
                     <TextView
@@ -170,13 +170,13 @@
                         android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:background="@color/colorGrayLight"
+                        android:background="@color/colorGreyLight"
                         android:gravity="center"/>
 
                     <View
                         android:layout_width="2sp"
                         android:layout_height="match_parent"
-                        android:background="@color/colorGray"/>
+                        android:background="@color/colorGrey"/>
 
                     <TextView
                         android:id="@+id/score_outside_match_2"
@@ -187,7 +187,7 @@
                         android:paddingBottom="7sp"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:background="@color/colorGrayLight"
+                        android:background="@color/colorGreyLight"
                         android:gravity="center"/>
 
                     <TextView

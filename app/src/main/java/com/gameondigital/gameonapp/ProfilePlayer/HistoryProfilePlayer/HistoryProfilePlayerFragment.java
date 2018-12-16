@@ -20,7 +20,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 
 import java.util.ArrayList;
 
-import static com.gameondigital.gameonapp.Util.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
 
 public class HistoryProfilePlayerFragment extends Fragment implements HistoryProfilePlayerContract.View{
 

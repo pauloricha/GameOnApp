@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1sp"
                 android:layout_below="@+id/txt_title_group"
-                android:background="@color/colorGrayLight3"/>
+                android:background="@color/colorGreyLight3"/>
 
             <TableRow
                 android:id="@+id/table_1"
@@ -126,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1sp"
                 android:layout_below="@+id/table_1"
-                android:background="@color/colorGrayLight3"/>
+                android:background="@color/colorGreyLight3"/>
 
             <!-- Linha 2 com 2 colunas -->
             <TableRow
@@ -138,7 +138,7 @@
                 android:paddingBottom="0sp"
                 android:paddingLeft="0sp"
                 android:paddingRight="0sp"
-                android:background="@color/colorGrayLight"
+                android:background="@color/colorGreyLight"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -173,7 +173,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -199,7 +199,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="normal"
                     android:textSize="14sp"
@@ -225,7 +225,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:layout_below="@+id/table_2"
-                android:background="@color/colorGrayLight"
+                android:background="@color/colorGreyLight"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -260,7 +260,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -286,7 +286,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="normal"
                     android:textSize="14sp"
@@ -312,7 +312,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:layout_below="@+id/table_3"
-                android:background="@color/colorGrayLight"
+                android:background="@color/colorGreyLight"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -347,7 +347,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -373,7 +373,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="normal"
                     android:textSize="14sp"
@@ -399,7 +399,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:layout_below="@+id/table_4"
-                android:background="@color/colorGrayLight"
+                android:background="@color/colorGreyLight"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -434,7 +434,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -460,7 +460,7 @@
                     android:paddingBottom="9sp"
                     android:paddingRight="5sp"
                     android:paddingLeft="5sp"
-                    android:background="@color/colorGray"
+                    android:background="@color/colorGrey"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="normal"
                     android:textSize="14sp"
@@ -485,7 +485,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1sp"
                 android:layout_below="@+id/table_5"
-                android:background="@color/colorGrayLight"/>
+                android:background="@color/colorGreyLight"/>
 
         </RelativeLayout>
 

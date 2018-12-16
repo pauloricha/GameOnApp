@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:layout_below="@+id/subtitle_match"
-                android:background="@color/colorGray"
+                android:background="@color/colorGrey"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -107,13 +107,13 @@
                     android:textSize="15sp"
                     android:paddingTop="7sp"
                     android:paddingBottom="7sp"
-                    android:background="@color/colorGrayLight"
+                    android:background="@color/colorGreyLight"
                     android:gravity="center"/>
 
                 <View
                     android:layout_width="2sp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorGray"/>
+                    android:background="@color/colorGrey"/>
 
                 <TextView
                     android:id="@+id/score_second_player_1"
@@ -124,24 +124,24 @@
                     android:textSize="15sp"
                     android:paddingTop="7sp"
                     android:paddingBottom="7sp"
-                    android:background="@color/colorGrayLight"
+                    android:background="@color/colorGreyLight"
                     android:gravity="center"/>
 
                 <View
                     android:layout_width="2sp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorGray"/>
+                    android:background="@color/colorGrey"/>
 
                 <TextView
                     android:id="@+id/score_extra_player_1"
                     android:text="-"
                     android:layout_weight="1"
-                    android:textColor="@color/colorGrayDark"
+                    android:textColor="@color/colorGreyDark"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:paddingTop="7sp"
                     android:paddingBottom="7sp"
-                    android:background="@color/colorGrayLight"
+                    android:background="@color/colorGreyLight"
                     android:gravity="center"/>
 
             </TableRow>
@@ -152,7 +152,7 @@
                 android:layout_width="fill_parent"
                 android:layout_marginTop="5sp"
                 android:layout_below="@+id/data_player_1"
-                android:background="@color/colorGray"
+                android:background="@color/colorGrey"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -185,13 +185,13 @@
                     android:textSize="15sp"
                     android:paddingTop="7sp"
                     android:paddingBottom="7sp"
-                    android:background="@color/colorGrayLight"
+                    android:background="@color/colorGreyLight"
                     android:gravity="center"/>
 
                 <View
                     android:layout_width="2sp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorGray"/>
+                    android:background="@color/colorGrey"/>
 
                 <TextView
                     android:id="@+id/score_second_player_2"
@@ -202,24 +202,24 @@
                     android:textSize="15sp"
                     android:paddingTop="7sp"
                     android:paddingBottom="7sp"
-                    android:background="@color/colorGrayLight"
+                    android:background="@color/colorGreyLight"
                     android:gravity="center"/>
 
                 <View
                     android:layout_width="2sp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorGray"/>
+                    android:background="@color/colorGrey"/>
 
                 <TextView
                     android:id="@+id/score_extra_player_2"
                     android:text="-"
                     android:layout_weight="1"
-                    android:textColor="@color/colorGrayDark"
+                    android:textColor="@color/colorGreyDark"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:paddingTop="7sp"
                     android:paddingBottom="7sp"
-                    android:background="@color/colorGrayLight"
+                    android:background="@color/colorGreyLight"
                     android:gravity="center"/>
 
             </TableRow>

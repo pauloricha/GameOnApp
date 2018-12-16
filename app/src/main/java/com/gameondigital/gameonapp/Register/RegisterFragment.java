@@ -16,15 +16,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.gameondigital.gameonapp.ForgotPassword.ForgotPasswordContract;
-import com.gameondigital.gameonapp.Login.LoginActivity;
+import com.gameondigital.gameonapp.Login.presentation.LoginActivity;
 import com.gameondigital.gameonapp.Main.MainActivity;
-import com.gameondigital.gameonapp.Main.MainContract;
 import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.R;
-import com.gameondigital.gameonapp.Util.ValidationFields;
+import com.gameondigital.gameonapp.Utils.ValidationFields;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;

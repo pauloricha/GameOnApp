@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Você tem: "
-            android:textColor="@color/colorGray" />
+            android:textColor="@color/colorGrey" />
 
         <TextView
             android:id="@+id/txt_num_credits"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="em créditos"
-            android:textColor="@color/colorGray"
+            android:textColor="@color/colorGrey"
             android:textSize="10sp" />
 
     </LinearLayout>
@@ -132,7 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="HISTÓRICO FINANCEIRO"
-            android:textColor="@color/colorGray"
+            android:textColor="@color/colorGrey"
             android:textSize="11sp"
             android:textStyle="bold" />
 

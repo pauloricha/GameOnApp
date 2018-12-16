@@ -1,6 +1,5 @@
-package com.gameondigital.gameonapp.Util;
+package com.gameondigital.gameonapp.Utils;
 
-import android.util.Patterns;
 import android.widget.EditText;
 
 import java.util.regex.Matcher;

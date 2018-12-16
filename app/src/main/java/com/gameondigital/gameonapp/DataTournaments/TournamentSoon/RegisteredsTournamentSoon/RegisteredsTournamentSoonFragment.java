@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -18,7 +17,7 @@ import com.google.firebase.storage.StorageReference;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.gameondigital.gameonapp.Util.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
 
 public class RegisteredsTournamentSoonFragment extends Fragment implements RegisteredsTournamentSoonContract.View{
 
