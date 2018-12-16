@@ -11,19 +11,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.gameondigital.gameonapp.Login.LoginActivity;
+import com.gameondigital.gameonapp.Login.presentation.LoginActivity;
 import com.gameondigital.gameonapp.Main.MainActivity;
-import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.Register.RegisterActivity;
-import com.gameondigital.gameonapp.Util.ValidationFields;
-import com.gameondigital.gameonapp.dao.FirebaseConfiguration;
-import com.google.firebase.auth.FirebaseAuth;
+import com.gameondigital.gameonapp.Utils.ValidationFields;
 
 public class ForgotPasswordFragment extends Fragment implements ForgotPasswordContract.View {
 

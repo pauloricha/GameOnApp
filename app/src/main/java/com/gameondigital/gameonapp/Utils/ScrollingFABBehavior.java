@@ -1,4 +1,4 @@
-package com.gameondigital.gameonapp.Util;
+package com.gameondigital.gameonapp.Utils;
 
 import android.content.Context;
 import android.support.design.widget.AppBarLayout;

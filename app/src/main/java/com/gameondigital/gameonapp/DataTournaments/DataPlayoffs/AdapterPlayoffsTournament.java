@@ -10,11 +10,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.gameondigital.gameonapp.R;
-import com.gameondigital.gameonapp.Util.SetListViewHeightBasedOnItems;
 
 import java.util.ArrayList;
 
-import static com.gameondigital.gameonapp.Util.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
 
 public class AdapterPlayoffsTournament extends PagerAdapter {
 

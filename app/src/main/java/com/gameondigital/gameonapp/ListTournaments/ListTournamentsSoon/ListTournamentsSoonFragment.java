@@ -17,7 +17,7 @@ import com.gameondigital.gameonapp.R;
 
 import java.util.ArrayList;
 
-import static com.gameondigital.gameonapp.Util.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
 
 public class ListTournamentsSoonFragment extends Fragment implements ListTournamentsSoonContract.View{
 

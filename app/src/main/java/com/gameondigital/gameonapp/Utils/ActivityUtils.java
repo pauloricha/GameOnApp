@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gameondigital.gameonapp.Util;
+package com.gameondigital.gameonapp.Utils;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;

@@ -1,4 +1,4 @@
-package com.gameondigital.gameonapp.Util;
+package com.gameondigital.gameonapp.Utils;
 
 import android.view.View;
 import android.view.ViewGroup;

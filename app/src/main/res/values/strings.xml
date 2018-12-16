@@ -42,4 +42,8 @@
     <string name="txt_title_wins_statics_profile_player">Vitórias</string>
     <string name="txt_title_draws_statics_profile_player">Empates</string>
     <string name="txt_title_loses_statics_profile_player">Derrotas</string>
+
+    <string name="txt_password_invalid">A senha é inválida.</string>
+    <string name="txt_user_account_disabled">A conta do usuário foi desativada por um administrador.</string>
+    <string name="txt_no_user_record_corresponding_this_email">Não há registro de usuário correspondente a esse email.</string>
 </resources>

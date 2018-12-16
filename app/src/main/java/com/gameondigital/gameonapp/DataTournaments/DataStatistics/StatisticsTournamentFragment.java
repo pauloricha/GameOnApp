@@ -10,15 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.gameondigital.gameonapp.ListPlayers.ListPlayersAz.AdapterListPlayersAz;
 import com.gameondigital.gameonapp.Model.Statistics;
 import com.gameondigital.gameonapp.R;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-
-import static com.gameondigital.gameonapp.Util.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
 
 public class StatisticsTournamentFragment extends Fragment implements StatisticsTournamentContract.View{
 

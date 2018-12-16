@@ -160,7 +160,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10sp"
         android:elevation="8sp"
-        android:src="@color/colorGray"
+        android:src="@color/colorGrey"
         app:civ_border="false"
         app:civ_shadow="true"
         app:civ_shadow_radius="10"/>

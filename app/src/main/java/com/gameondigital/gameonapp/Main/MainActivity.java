@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gameondigital.gameonapp.ListTournaments.TournamentsFragment;
-import com.gameondigital.gameonapp.Login.LoginActivity;
+import com.gameondigital.gameonapp.Login.presentation.LoginActivity;
 import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.ListPlayers.PlayersFragment;
 import com.gameondigital.gameonapp.MyProfile.MyProfileFragment;

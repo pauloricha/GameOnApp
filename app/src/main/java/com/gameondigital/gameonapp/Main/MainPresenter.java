@@ -2,7 +2,6 @@ package com.gameondigital.gameonapp.Main;
 
 import android.util.Log;
 
-import com.gameondigital.gameonapp.Login.LoginContract;
 import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.dao.FirebaseConfiguration;
 import com.google.firebase.auth.FirebaseAuth;

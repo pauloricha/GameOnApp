@@ -12,7 +12,7 @@
             android:id="@+id/tb_playoffs"
             android:layout_width="match_parent"
             android:layout_height="60sp"
-            android:background="@color/colorGray"
+            android:background="@color/colorGrey"
             app:tabIndicatorHeight="3sp"
             app:tabSelectedTextColor="@color/colorPrimary"
             app:tabIndicatorColor="@color/colorPrimary"
