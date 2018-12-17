@@ -1,43 +1,15 @@
-package com.gameondigital.gameonapp.Register;
+package com.gameondigital.gameonapp.Register.presenter;
 
-import com.gameondigital.gameonapp.dao.FirebaseConfiguration;
-import com.google.android.gms.tasks.OnCompleteListener;
+import com.gameondigital.gameonapp.Register.presentation.RegisterView;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 
-import android.app.Activity;
-import android.content.Context;
-import android.support.annotation.NonNull;
+public interface RegisterPresenter {
+    void setView(RegisterView view);
 
-import com.gameondigital.gameonapp.Model.*;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+    void setFonts();
 
-public class RegisterPresenter implements RegisterContract.UserActionsListener {
+    void callLogin();
 
-    private RegisterContract.View mRegisterView;
-
-    private FirebaseAuth mFirebaseAuth;
-
-    public RegisterPresenter(RegisterContract.View registerView){
-        mRegisterView = registerView;
-    }
-
-    @Override
-    public void registerUser(Context context, User user) {
-        mFirebaseAuth = FirebaseConfiguration.getFirebaseAuth();
-        mFirebaseAuth.createUserWithEmailAndPassword(user.getEmail(), user.getPassword())
-                .addOnCompleteListener((Activity) context, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            mRegisterView.registerSuccess();
-                        } else {
-                            mRegisterView.registerError(task);
-                        }
-                    }
-                });
-    }
+    void showErrorLogin(Task<AuthResult> task);
 }
