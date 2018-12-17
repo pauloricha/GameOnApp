@@ -33,7 +33,7 @@ package="com.gameondigital.gameonapp">
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".Register.RegisterActivity"
+            android:name=".Register.presentation.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity

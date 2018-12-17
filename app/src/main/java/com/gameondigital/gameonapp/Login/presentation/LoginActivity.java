@@ -18,7 +18,7 @@ import com.gameondigital.gameonapp.Login.presenter.LoginPresenter;
 import com.gameondigital.gameonapp.Login.presenter.LoginPresenterImpl;
 import com.gameondigital.gameonapp.Main.MainActivity;
 import com.gameondigital.gameonapp.R;
-import com.gameondigital.gameonapp.Register.RegisterActivity;
+import com.gameondigital.gameonapp.Register.presentation.RegisterActivity;
 import com.gameondigital.gameonapp.Utils.ShowToast;
 import com.gameondigital.gameonapp.Utils.ValidationFields;
 
