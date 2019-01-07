@@ -20,7 +20,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25sp"
+                android:layout_height="30sp"
                 android:layout_gravity="center"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
                 android:id="@+id/txt_title_email_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGrey2"
+                android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:text="@string/title_email_act_login" />
@@ -48,9 +48,10 @@
                 android:layout_below="@+id/txt_title_email_login"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="#000000"
+                android:textColor="@color/colorBlack"
                 android:textSize="15sp"
                 android:inputType="textEmailAddress"
+                android:hint="Digite seu e-mail"
                 android:text="paulo.richa@hotmail.com" />
 
             <TextView
@@ -59,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edt_email_login"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/colorGrey2"
+                android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:text="@string/title_password_act_login"/>
@@ -69,9 +70,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_title_password_login"
-                android:textColor="#000000"
+                android:textColor="@color/colorBlack"
                 android:inputType="textPassword"
                 android:textSize="15sp"
+                android:hint="********"
                 android:text="123456" />
 
             <TextView
@@ -80,9 +82,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
                 android:layout_below="@+id/edt_password_login"
                 android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
                 android:text="@string/btn_forgot_password_act_login" />
 
             <Button
@@ -95,6 +98,7 @@
                 android:background="@color/colorPrimary"
                 android:elevation="0sp"
                 android:textColor="#FFFFFF"
+                android:textSize="15sp"
                 android:text="@string/txt_btn_login_act_login" />
 
             <LinearLayout
@@ -111,7 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/txt_register_act_login"/>
 
                 <TextView
@@ -121,7 +126,8 @@
                     android:layout_marginLeft="3dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/txt_register_act_login_2" />
             </LinearLayout>
         </RelativeLayout>

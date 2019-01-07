@@ -24,7 +24,7 @@ package="com.gameondigital.gameonapp">
         </activity>
 
         <activity
-            android:name=".Main.MainActivity"
+            android:name=".Main.presentation.MainActivity"
             android:label="@string/txt_dashboard"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 

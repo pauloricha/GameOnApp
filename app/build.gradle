@@ -45,6 +45,7 @@ dependencies {
     compile 'com.google.firebase:firebase-storage:12.0.1'
     compile 'com.firebaseui:firebase-ui-storage:0.6.0'
 
+    compile 'com.github.armcha:SpaceNavigationView:1.6.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

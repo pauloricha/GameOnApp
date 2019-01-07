@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="states_arrays">
+        <item> </item>
         <item>Acre</item>
         <item>Alagoas</item>
         <item>Amapá</item>
