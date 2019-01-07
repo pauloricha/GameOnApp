@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/nav_dashboard"
         android:icon="@mipmap/ic_menu_dashboard"
-        android:title="@string/txt_dashboard"/>
+        android:title="@string/txt_dashboard" />
 
     <item
-        android:id="@+id/navigation_profile"
+        android:id="@+id/nav_profile"
         android:icon="@drawable/ic_menu_profile"
-        android:title="@string/txt_profile"/>
+        android:title="@string/txt_profile" />
 
     <item
-        android:id="@+id/navigation_tournaments"
+        android:id="@+id/nav_tournaments"
         android:icon="@drawable/ic_menu_tournaments"
-        android:title="@string/txt_tournaments"/>
+        android:title="@string/txt_tournaments" />
 
+    <item
+        android:id="@+id/nav_players"
+        android:icon="@drawable/ic_menu_find_players"
+        android:title="@string/txt_find_players" />
 </menu>

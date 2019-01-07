@@ -23,7 +23,7 @@
     <string name="txt_question_register_forgot_pass">VOCÊ NÃO POSSUI UMA CONTA?</string>
     <string name="txt_register_forgot_pass">CADASTRE-SE</string>
     <string name="txt_title_register">Cadastro</string>
-    <string name="txt_title_name_register">NOME COMPLETO</string>
+    <string name="txt_title_name_register">NOME</string>
     <string name="txt_title_email_register">EMAIL</string>
     <string name="txt_title_countrys_register">PAÍS</string>
     <string name="txt_title_states_register">ESTADO</string>

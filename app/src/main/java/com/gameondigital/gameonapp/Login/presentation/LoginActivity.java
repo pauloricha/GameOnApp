@@ -16,7 +16,7 @@ import com.gameondigital.gameonapp.Login.interactor.LoginInteractor;
 import com.gameondigital.gameonapp.Login.interactor.LoginInteractorImpl;
 import com.gameondigital.gameonapp.Login.presenter.LoginPresenter;
 import com.gameondigital.gameonapp.Login.presenter.LoginPresenterImpl;
-import com.gameondigital.gameonapp.Main.MainActivity;
+import com.gameondigital.gameonapp.Main.presentation.MainActivity;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.Register.presentation.RegisterActivity;
 import com.gameondigital.gameonapp.Utils.ShowToast;
@@ -84,7 +84,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
             public void onClick(View v) {
                 Intent intToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intToRegister);
-                finish();
             }
         });
 
@@ -93,7 +92,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
             public void onClick(View v) {
                 Intent intToRememberPassword = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
                 startActivity(intToRememberPassword);
-                finish();
             }
         });
     }

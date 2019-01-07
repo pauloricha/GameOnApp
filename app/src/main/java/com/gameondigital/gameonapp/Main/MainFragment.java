@@ -46,19 +46,19 @@ public class MainFragment extends android.support.v4.app.Fragment {
             Fragment fragment = null;
 
             switch (item.getItemId()) {
-                case R.id.navigation_dashboard:
+                /*case R.id.navigation_dashboard:
                     //mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_profile:
-                    /*fragment = new MyTournamentsFragment();
+                    *//*fragment = new MyTournamentsFragment();
                     if(fragment != null){
                         FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.content_main, fragment);
                         fragmentTransaction.commit();
-                    }*/
+                    }*//*
                     return true;
                 case R.id.navigation_tournaments:
-                    return true;
+                    return true;*/
             }
             return false;
         }
