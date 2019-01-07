@@ -11,10 +11,6 @@ public class MainPresenter {
         this.view = view;
     }
 
-    public void setDataMenu(User user) {
-        view.setDataMenu(user);
-    }
-
     public void callLogin() {
         view.callLogin();
     }

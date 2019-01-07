@@ -33,25 +33,25 @@ public class MainInteractorImpl implements MainInteractor {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 user = dataSnapshot.getValue(User.class);
-                presenter.setDataMenu(user);
+                //presenter.setDataMenu(user);
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
                 user = dataSnapshot.getValue(User.class);
-                presenter.setDataMenu(user);
+                //presenter.setDataMenu(user);
             }
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
                 user = dataSnapshot.getValue(User.class);
-                presenter.setDataMenu(user);
+                //presenter.setDataMenu(user);
             }
 
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
                 user = dataSnapshot.getValue(User.class);
-                presenter.setDataMenu(user);
+                //presenter.setDataMenu(user);
             }
 
             @Override
