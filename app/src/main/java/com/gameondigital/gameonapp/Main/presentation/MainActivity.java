@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import com.gameondigital.gameonapp.ListPlayers.PlayersFragment;
 import com.gameondigital.gameonapp.ListTournaments.TournamentsFragment;
-import com.gameondigital.gameonapp.Login.presentation.LoginActivity;
+import com.gameondigital.gameonapp.Login.ui.LoginActivity;
 import com.gameondigital.gameonapp.Main.MainFragment;
 import com.gameondigital.gameonapp.Main.presenter.MainPresenter;
 import com.gameondigital.gameonapp.Main.interactor.MainInteractor;

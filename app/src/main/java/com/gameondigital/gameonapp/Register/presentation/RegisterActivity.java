@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.gameondigital.gameonapp.Login.presentation.LoginActivity;
+import com.gameondigital.gameonapp.Login.ui.LoginActivity;
 import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.Register.interactor.RegisterInteractorImpl;
