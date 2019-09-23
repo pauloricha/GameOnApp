@@ -1,5 +1,6 @@
-package com.gameondigital.gameonapp.Login.presentation;
+package com.gameondigital.gameonapp.Login.ui;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -12,57 +13,55 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.gameondigital.gameonapp.ForgotPassword.ForgotPasswordActivity;
-import com.gameondigital.gameonapp.Login.interactor.LoginInteractor;
-import com.gameondigital.gameonapp.Login.interactor.LoginInteractorImpl;
+import com.gameondigital.gameonapp.Login.presenter.LoginPresenterContract;
 import com.gameondigital.gameonapp.Login.presenter.LoginPresenter;
-import com.gameondigital.gameonapp.Login.presenter.LoginPresenterImpl;
 import com.gameondigital.gameonapp.Main.presentation.MainActivity;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.Register.presentation.RegisterActivity;
 import com.gameondigital.gameonapp.Utils.ShowToast;
 import com.gameondigital.gameonapp.Utils.ValidationFields;
 
-public class LoginActivity extends AppCompatActivity implements LoginView{
+public class LoginActivity extends AppCompatActivity implements LoginActivityContract {
+
     private Typeface montserratBold,
             montserratRegular;
 
-    private LinearLayout llContent,
-            llRegister;
-    private ProgressBar pb;
-    private TextView txtTitleEmail,
-            txtTitlePassword,
-            txtRememberPassword,
-            txtRegister,
-            btnRegister;
-    private EditText edtEmail,
-            edtPassword;
+    private LinearLayout llContent, llRegister;
+    private ProgressBar pbLoading;
+    private TextView txtTitleEmail, txtTitlePassword, txtRememberPassword, txtRegister, btnRegister;
+    private EditText edtEmail, edtPassword;
     private Button btnLogin;
 
-    private LoginPresenter presenter;
-    private LoginInteractor interactor;
+    private LoginPresenterContract presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        initView();
-        init();
+        initPresenter();
+        initComponents();
+        initListeners();
+        start();
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        interactor.getCurrentUser();
+        presenter.getCurrentUser();
     }
 
-    private void initView() {
+    private void initPresenter() {
+        presenter = new LoginPresenter(this);
+    }
+
+    private void initComponents() {
         montserratBold = Typeface.createFromAsset(getAssets(), "fonts/Montserrat-Bold.otf");
         montserratRegular = Typeface.createFromAsset(getAssets(), "fonts/Montserrat-Regular.otf");
 
         llContent = findViewById(R.id.ln_content_login);
         llRegister = findViewById(R.id.ll_register_login);
-        pb = findViewById(R.id.pb_login);
+        pbLoading = findViewById(R.id.pb_loading_login);
         txtTitleEmail = findViewById(R.id.txt_title_email_login);
         txtTitlePassword = findViewById(R.id.txt_title_password_login);
         txtRememberPassword = findViewById(R.id.txt_remember_password_login);
@@ -70,8 +69,10 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         btnRegister = findViewById(R.id.btn_register_login);
         edtEmail = findViewById(R.id.edt_email_login);
         edtPassword = findViewById(R.id.edt_password_login);
-        btnLogin= findViewById(R.id.btn_login_login);
+        btnLogin = findViewById(R.id.btn_login_login);
+    }
 
+    private void initListeners() {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,31 +83,22 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         llRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intToRegister);
+                presenter.callRegister(RegisterActivity.class);
             }
         });
 
         txtRememberPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intToRememberPassword = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
-                startActivity(intToRememberPassword);
+                presenter.callRememberPassword(ForgotPasswordActivity.class);
             }
         });
     }
 
-    private void init() {
-        presenter = new LoginPresenterImpl();
-        interactor = new LoginInteractorImpl();
-
-        presenter.setView(this);
-        interactor.setPresenter(presenter);
-
+    private void start() {
         presenter.setFonts();
-
-        interactor.setPersistenceFirebaseDatabase();
-        interactor.initFirebaseAuth();
+        presenter.setPersistenceFirebaseDatabase();
+        presenter.initFirebaseAuth();
     }
 
     @Override
@@ -117,7 +109,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         if (!ValidationFields.isEmpty(edtEmail)) {
             if (ValidationFields.isEmailValid(edtEmail)) {
                 if (!ValidationFields.isEmpty(edtPassword)) {
-                    interactor.login(this, email, password);
+                    presenter.login(this, email, password);
                 } else {
                     edtPassword.setError("Digite a sua senha");
                 }
@@ -135,15 +127,19 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     }
 
     @Override
-    public void callHome() {
-        Intent intToHome = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(intToHome);
+    public void callActivity(Class<?> cls) {
+        Intent intent = new Intent(this, cls);
+        startActivity(intent);
+    }
+
+    @Override
+    public void finishActivity() {
         finish();
     }
 
     @Override
     public void dismissLoading() {
-        pb.setVisibility(View.GONE);
+        pbLoading.setVisibility(View.GONE);
     }
 
     @Override
