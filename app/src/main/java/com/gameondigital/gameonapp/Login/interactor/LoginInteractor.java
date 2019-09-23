@@ -54,11 +54,11 @@ public class LoginInteractor implements LoginInteractorContract {
                 .addOnCompleteListener(loginActivity, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        presenter.dismissLoading();
                         if (task.isSuccessful()) {
                             presenter.callHome();
                         } else {
                             String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
+                            presenter.dismissLoading();
                             presenter.showErrorLogin(errorCode);
                         }
                     }

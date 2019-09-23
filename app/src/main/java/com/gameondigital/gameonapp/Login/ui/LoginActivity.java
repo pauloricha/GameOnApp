@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityCon
     @Override
     public void onStart() {
         super.onStart();
-        presenter.getCurrentUser();
+        //presenter.getCurrentUser();
     }
 
     private void initPresenter() {
@@ -109,6 +109,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityCon
         if (!ValidationFields.isEmpty(edtEmail)) {
             if (ValidationFields.isEmailValid(edtEmail)) {
                 if (!ValidationFields.isEmpty(edtPassword)) {
+                    pbLoading.setVisibility(View.VISIBLE);
                     presenter.login(this, email, password);
                 } else {
                     edtPassword.setError("Digite a sua senha");
