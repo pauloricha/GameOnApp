@@ -29,7 +29,7 @@ package="com.gameondigital.gameonapp">
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".ForgotPassword.ForgotPasswordActivity"
+            android:name=".ForgotPassword.ui.ForgotPasswordActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity

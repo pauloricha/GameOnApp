@@ -1,6 +1,5 @@
 package com.gameondigital.gameonapp.Login.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -12,10 +11,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.gameondigital.gameonapp.ForgotPassword.ForgotPasswordActivity;
+import com.gameondigital.gameonapp.ForgotPassword.ui.ForgotPasswordActivity;
 import com.gameondigital.gameonapp.Login.presenter.LoginPresenterContract;
 import com.gameondigital.gameonapp.Login.presenter.LoginPresenter;
-import com.gameondigital.gameonapp.Main.presentation.MainActivity;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.Register.presentation.RegisterActivity;
 import com.gameondigital.gameonapp.Utils.ShowToast;

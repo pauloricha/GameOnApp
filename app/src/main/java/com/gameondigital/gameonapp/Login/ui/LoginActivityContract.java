@@ -1,7 +1,5 @@
 package com.gameondigital.gameonapp.Login.ui;
 
-import android.content.Context;
-
 public interface LoginActivityContract {
     void setFonts();
 

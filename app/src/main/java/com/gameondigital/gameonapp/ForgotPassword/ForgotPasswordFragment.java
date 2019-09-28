@@ -15,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gameondigital.gameonapp.ForgotPassword.presenter.ForgotPasswordPresenter;
 import com.gameondigital.gameonapp.Login.ui.LoginActivity;
 import com.gameondigital.gameonapp.Main.presentation.MainActivity;
 import com.gameondigital.gameonapp.R;
