@@ -1,7 +1,6 @@
 package com.gameondigital.gameonapp.DataTournaments.DataPlayoffs;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +13,8 @@ import com.gameondigital.gameonapp.R;
 import java.util.ArrayList;
 
 import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 public class AdapterPlayoffsTournament extends PagerAdapter {
 

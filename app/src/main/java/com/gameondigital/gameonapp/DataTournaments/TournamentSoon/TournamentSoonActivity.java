@@ -3,14 +3,6 @@ package com.gameondigital.gameonapp.DataTournaments.TournamentSoon;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -20,6 +12,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
 import com.gameondigital.gameonapp.DataTournaments.TournamentSoon.InfoTournamentSoon.InfoTournamentSoonFragment;
@@ -28,6 +27,8 @@ import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.ProfilePlayer.HistoryProfilePlayer.HistoryProfilePlayerFragment;
 import com.gameondigital.gameonapp.ProfilePlayer.StaticsProfilePlayer.StaticsProfilePlayerFragment;
 import com.gameondigital.gameonapp.R;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 

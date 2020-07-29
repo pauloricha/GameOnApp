@@ -3,12 +3,6 @@ package com.gameondigital.gameonapp.ListPlayers;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,9 +11,16 @@ import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.gameondigital.gameonapp.ListPlayers.ListPlayersAz.ListPlayersAzFragment;
 import com.gameondigital.gameonapp.ListPlayers.ListPlayersRank.ListPlayersRankFragment;
 import com.gameondigital.gameonapp.R;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -140,7 +141,7 @@ public final class PlayersFragment extends Fragment implements PlayersContract.V
 
     class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-        private final List<android.support.v4.app.Fragment> playersFragmentList = new ArrayList<>();
+        private final List<Fragment> playersFragmentList = new ArrayList<>();
         private final List<String> playersFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(FragmentManager manager) {
@@ -148,7 +149,7 @@ public final class PlayersFragment extends Fragment implements PlayersContract.V
         }
 
         @Override
-        public android.support.v4.app.Fragment getItem(int position) {
+        public Fragment getItem(int position) {
             return playersFragmentList.get(position);
         }
 
@@ -157,7 +158,7 @@ public final class PlayersFragment extends Fragment implements PlayersContract.V
             return playersFragmentList.size();
         }
 
-        public void addFragment(android.support.v4.app.Fragment fragment, String title) {
+        public void addFragment(Fragment fragment, String title) {
             Log.i("LOOG", "TournamentsActivity -> addFragment");
 
             playersFragmentList.add(fragment);

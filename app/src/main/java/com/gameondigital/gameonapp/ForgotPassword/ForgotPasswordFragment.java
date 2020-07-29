@@ -2,8 +2,6 @@ package com.gameondigital.gameonapp.ForgotPassword;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +13,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.gameondigital.gameonapp.ForgotPassword.presenter.ForgotPasswordPresenter;
 import com.gameondigital.gameonapp.Login.ui.LoginActivity;
 import com.gameondigital.gameonapp.Main.presentation.MainActivity;
@@ -22,9 +23,7 @@ import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.Register.presentation.RegisterActivity;
 import com.gameondigital.gameonapp.Utils.ValidationFields;
 
-public class ForgotPasswordFragment extends Fragment implements ForgotPasswordContract.View {
-
-    private ForgotPasswordContract.UserActionsListener mActionsListener;
+public class ForgotPasswordFragment extends Fragment {
 
     private EditText edt_email_forgot_pass;
     private Button btn_forgot_pass;
@@ -70,7 +69,7 @@ public class ForgotPasswordFragment extends Fragment implements ForgotPasswordCo
         btn_register_forgot_pass = rootView.findViewById(R.id.btn_register_forgot_pass);
         pb_forgot_pass = rootView.findViewById(R.id.pb_forgot_pass);
 
-        mActionsListener = new ForgotPasswordPresenter(this);
+        //mActionsListener = new ForgotPasswordPresenter(this);
     }
 
     private void initListeners(){
@@ -90,7 +89,7 @@ public class ForgotPasswordFragment extends Fragment implements ForgotPasswordCo
                 if (!ValidationFields.isEmpty(edt_email_forgot_pass)) {
                     if (ValidationFields.isEmailValid(edt_email_forgot_pass)) {
                         pb_forgot_pass.setVisibility(View.VISIBLE);
-                        mActionsListener.resetPassword(edt_email_forgot_pass.getText().toString(), getActivity());
+                        //mActionsListener.resetPassword(edt_email_forgot_pass.getText().toString(), getActivity());
                     } else { edt_email_forgot_pass.setError("Email inválido"); }
                 } else { edt_email_forgot_pass.setError("Digite o seu email"); }
             }
@@ -106,7 +105,6 @@ public class ForgotPasswordFragment extends Fragment implements ForgotPasswordCo
         });
     }
 
-    @Override
     public void resetPasswordSuccess() {
         Log.i("LOOG", "ForgotPasswordFragment -> resetPasswordSuccess");
         pb_forgot_pass.setVisibility(View.GONE);
@@ -116,7 +114,6 @@ public class ForgotPasswordFragment extends Fragment implements ForgotPasswordCo
         getActivity().finish();
     }
 
-    @Override
     public void resetPasswordError() {
         Log.i("LOOG", "ForgotPasswordFragment -> resetPasswordError");
         pb_forgot_pass.setVisibility(View.GONE);

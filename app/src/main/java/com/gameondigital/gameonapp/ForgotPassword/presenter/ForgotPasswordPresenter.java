@@ -2,8 +2,9 @@ package com.gameondigital.gameonapp.ForgotPassword.presenter;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import com.gameondigital.gameonapp.ForgotPassword.ui.ForgotPasswordActivity;
 import com.gameondigital.gameonapp.ForgotPassword.ui.ForgotPasswordActivityContract;

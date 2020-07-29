@@ -2,11 +2,12 @@ package com.gameondigital.gameonapp.Main.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.gameondigital.gameonapp.ListPlayers.PlayersFragment;
 import com.gameondigital.gameonapp.ListTournaments.TournamentsFragment;
@@ -19,11 +20,13 @@ import com.gameondigital.gameonapp.Main.presenter.MainPresenterImpl;
 import com.gameondigital.gameonapp.MyProfile.MyProfileFragment;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.commons.BaseActivity;
-import com.luseen.spacenavigation.SpaceItem;
-import com.luseen.spacenavigation.SpaceNavigationView;
-import com.luseen.spacenavigation.SpaceOnClickListener;
+import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener,
+import henry.co.bottom.navigtion.SpaceItem;
+import henry.co.bottom.navigtion.SpaceNavigationView;
+import henry.co.bottom.navigtion.SpaceOnClickListener;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
         MainView {
 
     private MainPresenter presenter;

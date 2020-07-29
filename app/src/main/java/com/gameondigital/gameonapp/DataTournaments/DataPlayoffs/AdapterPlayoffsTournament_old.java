@@ -1,10 +1,11 @@
 package com.gameondigital.gameonapp.DataTournaments.DataPlayoffs;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.gameondigital.gameonapp.R;
 
