@@ -1,6 +1,6 @@
 package com.gameondigital.gameonapp.Register.interactor;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.gameondigital.gameonapp.Model.User;
 import com.gameondigital.gameonapp.Register.presentation.RegisterActivity;

@@ -2,8 +2,6 @@ package com.gameondigital.gameonapp.ProfilePlayer.HistoryProfilePlayer;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +19,9 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import java.util.ArrayList;
 
 import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 public class HistoryProfilePlayerFragment extends Fragment implements HistoryProfilePlayerContract.View{
 

@@ -1,20 +1,21 @@
 package com.gameondigital.gameonapp.DataTournaments.TournamentInProgress;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.gameondigital.gameonapp.DataTournaments.DataGroups.GroupsTournamentFragment;
 import com.gameondigital.gameonapp.DataTournaments.DataPlayoffs.PlayoffsTournamentFragment;
 import com.gameondigital.gameonapp.DataTournaments.DataStatistics.StatisticsTournamentFragment;
 import com.gameondigital.gameonapp.DataTournaments.TournamentSoon.TournamentSoonContract;
 import com.gameondigital.gameonapp.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class TournamentInProgressActivity extends AppCompatActivity implements TournamentSoonContract.View{
 

@@ -16,12 +16,13 @@
 
 package com.gameondigital.gameonapp.Utils;
 
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-
 import static com.google.android.gms.internal.zzdog.checkNotNull;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 /**
  * This provides methods to help Activities load their UI.
  */

@@ -3,12 +3,6 @@ package com.gameondigital.gameonapp.ListTournaments;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,15 +11,22 @@ import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.gameondigital.gameonapp.ListTournaments.ListTournamentsFinalized.ListTournamentsFinalizedFragment;
 import com.gameondigital.gameonapp.ListTournaments.ListTournamentsInProgress.ListTournamentsInProgressFragment;
 import com.gameondigital.gameonapp.R;
 import com.gameondigital.gameonapp.ListTournaments.ListTournamentsSoon.ListTournamentsSoonFragment;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public final class TournamentsFragment extends android.support.v4.app.Fragment implements TournamentsContract.View {
+public final class TournamentsFragment extends Fragment implements TournamentsContract.View {
 
     private TournamentsContract.UserActionsListener mActionsListener;
 

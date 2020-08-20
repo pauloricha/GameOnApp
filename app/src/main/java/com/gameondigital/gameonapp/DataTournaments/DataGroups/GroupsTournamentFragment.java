@@ -1,8 +1,6 @@
 package com.gameondigital.gameonapp.DataTournaments.DataGroups;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +12,9 @@ import com.gameondigital.gameonapp.R;
 import java.util.ArrayList;
 
 import static com.gameondigital.gameonapp.Utils.SetListViewHeightBasedOnItems.setListViewHeightBasedOnItems;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 public class GroupsTournamentFragment extends Fragment implements GroupsTournamentContract.View{
 

@@ -2,14 +2,15 @@ package com.gameondigital.gameonapp.DataTournaments.DataStatistics;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.gameondigital.gameonapp.R;
 
