@@ -24,6 +24,11 @@ class LoginActivity : AppCompatActivity(), LoginActivityContract {
         initInteractor()
     }
 
+    override fun onStart() {
+        super.onStart()
+        interactor.getCurrentUser();
+    }
+
     private fun initInteractor() {
         interactor = LoginInteractor(LoginPresenter(this))
         interactor.initFirebaseAuth()

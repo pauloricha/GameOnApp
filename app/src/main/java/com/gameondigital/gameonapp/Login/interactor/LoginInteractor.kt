@@ -59,7 +59,7 @@ class LoginInteractor(private val presenter: LoginPresenterContract) : LoginInte
                 }
     }
 
-    /*override fun getCurrentUser(): FirebaseUser {
+    override fun getCurrentUser(): FirebaseUser? {
         val firebaseUser = firebaseAuth!!.currentUser
         if (firebaseUser != null) {
             presenter.goToHome()
@@ -67,5 +67,5 @@ class LoginInteractor(private val presenter: LoginPresenterContract) : LoginInte
             presenter.showLoginView()
         }
         return null
-    }*/
+    }
 }
